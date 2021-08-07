@@ -3,7 +3,7 @@ sudo xhost +local:root
 sudo docker load -i office2007.tar
 mkdir $HOME/office
 
-sudo docker container create \
+docker container create \
   --name word \
   -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -16,7 +16,7 @@ sudo docker container create \
   office2007 \
   wine /home/wine/.wine32/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE
 
-sudo docker container create \
+docker container create \
   --name excel \
   -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -29,7 +29,7 @@ sudo docker container create \
   office2007 \
   wine /home/wine/.wine32/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE
 
-sudo docker container create \
+docker container create \
   --name powerpoint \
   -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -42,7 +42,7 @@ sudo docker container create \
   office2007 \
   wine /home/wine/.wine32/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE
 
-sudo docker container create \
+docker container create \
   --name access \
   -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -56,13 +56,13 @@ sudo docker container create \
   wine /home/wine/.wine32/drive_c/Program\ Files/Microsoft\ Office/Office12/MSACCESS.EXE
 
 echo "#!/bin/bash" > word
-echo "sudo docker start word" >> word
+echo "docker start word" >> word
 echo "#!/bin/bash" > excel
-echo "sudo docker start excel" >> excel
+echo "docker start excel" >> excel
 echo "#!/bin/bash" > powerpoint
-echo "sudo docker start powerpoint" >> powerpoint
+echo "docker start powerpoint" >> powerpoint
 echo "#!/bin/bash" > access
-echo "sudo docker start access" >> access
+echo "docker start access" >> access
 
 sudo chmod +x word
 sudo chmod +x excel
