@@ -12,6 +12,7 @@
 - 4，赋予install.sh文件可执行权限
   - sudo chmod +x install.sh
 - 5，安装
-  - sudo ./install.sh
+  - ./install.sh
+  - 注意这里不要用sudo ./install这样的形式运行
 
-安装完成后就可以使用word，excel，powerpoint，access命令启动
+安装完成后就可以使用word，excel，powerpoint，access命令启动，注意保存文档到office文件夹内，因为我将Docker内的office文件夹映射到本地电脑的office内也就是说，在使用word等软件中，保存文档到office文件夹内，你的电脑内才会有这个文件
