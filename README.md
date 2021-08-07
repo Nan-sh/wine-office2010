@@ -4,6 +4,7 @@
 - 链接: https://pan.baidu.com/s/1bEtZwlvWy5YRN4dEbg4SJA  密码: m8ks
 
 使用教程:
+- 0，本脚本借助Docker运行，因此在使用前请安装Docker
 - 1，下载所给地址的zip文件，然后解压它，会得到一个office2007.tar的文件
 - 2，克隆仓库
   - git clone https://github.com/Nan-sh/wine-office2007.git
