@@ -73,3 +73,5 @@ sudo mv word /usr/bin/
 sudo mv excel /usr/bin
 sudo mv powerpoint /usr/bin
 sudo mv access /usr/bin
+
+sudo rm -rf office2007.tar
