@@ -56,12 +56,16 @@ docker container create \
   wine /home/wine/.wine32/drive_c/Program\ Files/Microsoft\ Office/Office12/MSACCESS.EXE
 
 echo "#!/bin/bash" > word
+echo "xhost +" > word
 echo "docker start word" >> word
 echo "#!/bin/bash" > excel
+echo "xhost +"
 echo "docker start excel" >> excel
 echo "#!/bin/bash" > powerpoint
+echo "xhost +"
 echo "docker start powerpoint" >> powerpoint
 echo "#!/bin/bash" > access
+echo "xhost +"
 echo "docker start access" >> access
 
 sudo chmod +x word
