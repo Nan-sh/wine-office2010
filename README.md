@@ -7,7 +7,7 @@
 - 0.1，本脚本借助Docker运行，因此在使用前请安装Docker
 - 0.2，在安装好Docker后将用户加入Docker组
   - sudo usermod -aG docker ${USER}
-- 1，下载所给地址的zip文件，然后解压它，会得到一个playonlinux-office2010.tar的文件
+- 1，下载所给地址的7z文件，然后解压它，会得到一个playonlinux-office2010.tar的文件
 - 2，克隆仓库
   - git clone https://github.com/Nan-sh/wine-office2010.git
 - 3，将playonlinux-office2010.tar与install.sh文件放在同一目录下
