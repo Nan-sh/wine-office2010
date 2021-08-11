@@ -9,7 +9,7 @@
   - sudo usermod -aG docker ${USER}
 - 1，下载所给地址的zip文件，然后解压它，会得到一个playonlinux-office2010.tar的文件
 - 2，克隆仓库
-  - git clone https://github.com/Nan-sh/wine-office2007.git
+  - git clone https://github.com/Nan-sh/wine-office2010.git
 - 3，将playonlinux-office2010.tar与install.sh文件放在同一目录下
 - 4，赋予install.sh文件可执行权限
   - sudo chmod +x install.sh
