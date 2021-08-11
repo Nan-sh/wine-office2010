@@ -1,7 +1,7 @@
 # wine-office2010
 ## 这是一个运行在docker的office2010，使用它你可以在Linux上使用office2010，借助playonlinux构建
 由于在Docker配置office2010需要使用gui界面因此不能借助dockfile来创建Docker镜像，但是Docker镜像我已经建立好了，直接下载用就可以，下载地址如下:
-- 链接: https://pan.baidu.com/s/1bEtZwlvWy5YRN4dEbg4SJA  密码: m8ks
+- 链接: https://pan.baidu.com/s/12QAi_-lj3ZvxTGC2LDQ2oA  密码: 46ah
 
 使用教程:
 - 0.1，本脚本借助Docker运行，因此在使用前请安装Docker
