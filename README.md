@@ -14,6 +14,7 @@
 - 4，赋予install.sh文件可执行权限
   - sudo chmod +x install.sh
 - 5，安装
+  - 运行sudo chown -R ${USER} /var/run/docker.sock 
   - ./install.sh
   - 注意这里不要用sudo ./install这样的形式运行
 
